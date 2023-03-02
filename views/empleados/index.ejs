@@ -21,13 +21,13 @@
     </tr>
   </thead>
   <tbody>
-    <% for( let empleado = 0; empleado < empleados.length; empleado++ ) { %>
+    <% for( let empleado = 0; empleado < 3; empleado++ ) { %>
        
         <tr>
             <td> <%=empleados[empleado].id %></td>
             <td><%=empleados[empleado].nombre%></td>
             <td><%=empleados[empleado].imagen%>
-              <img class="img-thumbnail" width="100" src="images/<%=empleado.imagen %>" alt=""> 
+              <img class="img-thumbnail" width="100" src="../../images/<%=empleados[empleado].imagen %>"> 
             </td>
             <td>
               <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
